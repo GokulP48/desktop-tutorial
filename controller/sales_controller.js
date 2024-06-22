@@ -88,15 +88,15 @@ export class SalesController {
             })
         }
 
-        if(!product) {
+        if(product) {
             filter += `and poduct_id = ${product_id}` 
         }
 
-        if(!category){
+        if(category){
             filter +=   `and category = ${category}`
         }
 
-        if(!region){
+        if(region){
             filter += `and region = ${region}`
         }
 
@@ -157,12 +157,12 @@ export class SalesController {
             var filter = "";
 
 
-            if(!category){
+            if(category){
                 filter  += " and category = " + category
             }
 
 
-            if(!region){
+            if(region){
 
                 filter += " and region = " + region
             }
